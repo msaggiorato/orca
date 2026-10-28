@@ -55,6 +55,7 @@ function cancelBrowserSessionCookieScrollFrames(frameIds: MutableRefObject<numbe
   frameIds.current = []
 }
 
+/** Settings → Browser pane; each row renders only while it matches the settings search query. */
 export function BrowserPane({
   settings,
   updateSettings,

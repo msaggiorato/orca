@@ -73,6 +73,7 @@ function getLinkRoutingBackgroundDescription(): string {
   )
 }
 
+/** Title, description and search keywords for the split-beside toggle, shared by the row and settings search. */
 export function getLinkRoutingSplitBesideSearchEntry(): SettingsSearchEntry {
   return {
     title: translate(

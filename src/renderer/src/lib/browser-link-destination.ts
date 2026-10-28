@@ -186,6 +186,7 @@ export function currentBrowserLinkMatch(
     : null
 }
 
+/** Picks where a link opens: a reusable matching page, a visible browser, then the source pane (split beside it unless the user opted out). */
 export function selectBrowserLinkDestination(
   state: AppState,
   destination: BrowserLinkDestination,

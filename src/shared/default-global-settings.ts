@@ -16,6 +16,7 @@ import {
 import { DEFAULT_SOURCE_CONTROL_GROUP_ORDER } from './source-control-group-order'
 import { DESKTOP_TERMINAL_SCROLLBACK_ROWS_DEFAULT } from './terminal-scrollback-policy'
 
+/** Default GlobalSettings for a fresh profile; platform-dependent values come from the caller. */
 export function buildDefaultSettings(args: {
   workspaceDir: string
   appFontFamily: string

@@ -70,6 +70,7 @@ export function getTerminalLinkActionSearchKeywords(platform: BrowserShortcutPla
   ]
 }
 
+/** Search entries for the Browser pane, in the index order BrowserPane reads them by. */
 export function getBrowserPaneSearchEntries(
   platform: BrowserShortcutPlatform = getDefaultBrowserShortcutPlatform()
 ): SettingsSearchEntry[] {

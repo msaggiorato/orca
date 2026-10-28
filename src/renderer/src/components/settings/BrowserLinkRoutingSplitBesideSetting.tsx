@@ -8,6 +8,7 @@ type BrowserLinkRoutingSplitBesideSettingProps = {
   updateSettings: (updates: Partial<GlobalSettings>) => void
 }
 
+/** Link Routing switch that chooses between splitting beside the clicked pane and opening a tab in it. */
 export function BrowserLinkRoutingSplitBesideSetting({
   settings,
   updateSettings
