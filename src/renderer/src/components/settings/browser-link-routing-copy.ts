@@ -73,6 +73,35 @@ function getLinkRoutingBackgroundDescription(): string {
   )
 }
 
+export function getLinkRoutingSplitBesideSearchEntry(): SettingsSearchEntry {
+  return {
+    title: translate(
+      'auto.components.settings.BrowserLinkRoutingSplitBesideSetting.title',
+      'Open links in a split beside the pane'
+    ),
+    description: translate(
+      'auto.components.settings.BrowserLinkRoutingSplitBesideSetting.description',
+      'When no browser is visible, links open in a new pane beside where you clicked. Turn off to open them as a tab in the same pane.'
+    ),
+    keywords: [
+      ...translateSearchKeyword('auto.components.settings.browser.search.2d2d995c58', 'browser'),
+      ...translateSearchKeyword('auto.components.settings.browser.search.bea27bac4b', 'links'),
+      ...translateSearchKeyword(
+        'auto.components.settings.browser.search.linkRoutingSplitBeside.split',
+        'split'
+      ),
+      ...translateSearchKeyword(
+        'auto.components.settings.browser.search.linkRoutingSplitBeside.pane',
+        'pane'
+      ),
+      ...translateSearchKeyword(
+        'auto.components.settings.browser.search.linkRoutingBackground.tab',
+        'tab'
+      )
+    ]
+  }
+}
+
 export function getLinkRoutingBackgroundSearchEntry(): SettingsSearchEntry {
   return {
     title: getLinkRoutingBackgroundTitle(),
@@ -94,4 +123,9 @@ export function getLinkRoutingBackgroundSearchEntry(): SettingsSearchEntry {
       )
     ]
   }
+}
+
+/** Background then split-beside, matching their order in the Browser pane. */
+export function getLinkRoutingPlacementSearchEntries(): SettingsSearchEntry[] {
+  return [getLinkRoutingBackgroundSearchEntry(), getLinkRoutingSplitBesideSearchEntry()]
 }
